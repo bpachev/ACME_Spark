@@ -5,4 +5,4 @@ sc = SparkContext("local", "Simple App")
 data = sc.sequenceFile(bigramPath).cache()
 
 sums = data.map(lambda bigram: (bigram[0][0], bigram[1]) ).reduceByKey(lambda a,b: a+b)
-print data.map(lambda b: (b[0][0],(b[0][1], b[1]))).join(sums).map(lambda t: )
+print data.map(lambda b: (b[0][0],(b[0][1], b[1]) ) ).join(sums).map(lambda t: (t[0]+t[1][0][0], t[1][0][1]/float(t[1][1]) )).collect()
