@@ -1,20 +1,4 @@
-61
-93
-51
-78
-65
-24
-62
-98
-68
-61
-4
-14
-13
-54
-27
-36
-64
-98
-7
-26
+hello
+this is a text file
+another line
+more lines

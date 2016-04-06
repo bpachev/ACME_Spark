@@ -1,0 +1,27 @@
+Spark provides programmers with an application programming interface centered
+on a data structure called the resilient distributed dataset (RDD), a read-only
+multiset of data items distributed over a cluster of machines, that is
+maintained in a fault-tolerant way. It was developed in response to limitations
+in the MapReduce cluster computing paradigm, which forces a particular linear
+dataflow structure on distributed programs: MapReduce programs read input data
+from disk, map a function across the data, reduce the results of the map, and
+store reduction results on disk. Spark's RDDs function as a working set for
+distributed programs that offers a (deliberately) restricted form of
+distributed shared memory.  The system will ship as part of this summer's
+Anniversary Update for Windows 10. WSL has two parts; there's the core
+subsystem, which is already included in Insider Preview builds of the operating
+system, and then a package of software that Canonical will provide. The core
+subsystem is what provides the Linux API on Windows, including the ability to
+natively load Linux executables and libraries. Canonical will provide bash and
+all the other command-line tools that are expected in a Linux environment.
+Microsoft is positioning WSL strictly as a tool for developers, with a
+particular view to supporting Web developers and the open source software
+stacks that they depend on. Many developers are very familiar with the bash
+shell, with building software using make and gcc, and editing text in vi or
+emacs. WSL will give these developers versions of these tools that are equal in
+just about every regard to the ones you get on Linux, because they'll be the
+ones you get on Linux running unmodified on Windows.  With that developer
+focus, Microsoft isn't supporting WSL as a deployment platform. It might be
+possible to run, for example, the Apache Web server under WSL, and it might
+even be useful to do so for development, but the intent is not that
+applications would ever be run in production with this configuration.
